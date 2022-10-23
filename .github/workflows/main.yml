@@ -1,8 +1,10 @@
 name: Build PBR
 
 on:
+  push:
+    branches: [ master ]
   schedule:
-    - cron: "2 0/1 * * *"
+    - cron: '2 0/1 * * *'
   workflow_dispatch:
 
 jobs:
