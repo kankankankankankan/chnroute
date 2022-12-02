@@ -8652,6 +8652,10 @@
 :do { add address=2a0e:7580::/29 list=CN comment=AS4809 } on-error={}
 :do { add address=2a10:1cc0::/29 list=CN comment=AS4809 } on-error={}
 :do { add address=2a13:1800::/29 list=CN comment=AS4809 } on-error={}
+:do { add address=2001:678:258::/48 list=CN comment=AS4809 } on-error={}
+:do { add address=2001:678:d3c::/48 list=CN comment=AS4809 } on-error={}
+:do { add address=2001:67c:360::/48 list=CN comment=AS4809 } on-error={}
+:do { add address=2001:67c:a1c::/48 list=CN comment=AS4809 } on-error={}
 :do { add address=2001:67c:aec::/48 list=CN comment=AS4809 } on-error={}
 :do { add address=2001:67c:2964::/48 list=CN comment=AS4809 } on-error={}
 :do { add address=2001:250::/35 list=CN comment=AS4809 } on-error={}
