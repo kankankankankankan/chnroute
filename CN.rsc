@@ -10602,6 +10602,7 @@
 :do { add address=240b:6000::/20 list=CN comment=AS4809 } on-error={}
 :do { add address=240b:8000::/21 list=CN comment=AS4809 } on-error={}
 :do { add address=240b:a000::/25 list=CN comment=AS4809 } on-error={}
+:do { add address=240b:e000::/26 list=CN comment=AS4809 } on-error={}
 :do { add address=240c::/28 list=CN comment=AS4809 } on-error={}
 :do { add address=240c:4000::/22 list=CN comment=AS4809 } on-error={}
 :do { add address=240c:8000::/21 list=CN comment=AS4809 } on-error={}
