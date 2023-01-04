@@ -8613,7 +8613,7 @@
 :do { add address=223.120.128.0/17 list=CN comment=AS4809 } on-error={}
 :do { add address=223.121.128.0/17 list=CN comment=AS4809 } on-error={}
 :do { add address=223.122.128.0/17 list=CN comment=AS4809 } on-error={}
-:do { add address=223.123.0.0/16 list=CN comment=AS4809 } on-error={}
+:do { add address=223.123.128.0/17 list=CN comment=AS4809 } on-error={}
 :do { add address=223.124.0.0/14 list=CN comment=AS4809 } on-error={}
 :do { add address=223.128.0.0/15 list=CN comment=AS4809 } on-error={}
 :do { add address=223.144.0.0/12 list=CN comment=AS4809 } on-error={}
