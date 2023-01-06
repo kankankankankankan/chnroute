@@ -3017,6 +3017,8 @@
 :do { add address=103.65.168.0/22 list=CN comment=AS4809 } on-error={}
 :do { add address=103.65.172.0/22 list=CN comment=AS4809 } on-error={}
 :do { add address=103.65.204.0/23 list=CN comment=AS4809 } on-error={}
+:do { add address=103.65.206.0/23 list=CN comment=AS4809 } on-error={}
+:do { add address=103.65.224.0/23 list=CN comment=AS4809 } on-error={}
 :do { add address=103.66.32.0/22 list=CN comment=AS4809 } on-error={}
 :do { add address=103.66.40.0/22 list=CN comment=AS4809 } on-error={}
 :do { add address=103.66.92.0/22 list=CN comment=AS4809 } on-error={}
