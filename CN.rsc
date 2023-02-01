@@ -9030,6 +9030,7 @@
 :do { add address=2400:d780::/32 list=CN comment=AS4809 } on-error={}
 :do { add address=2400:d7a0::/32 list=CN comment=AS4809 } on-error={}
 :do { add address=2400:da00::/32 list=CN comment=AS4809 } on-error={}
+:do { add address=2400:da60::/32 list=CN comment=AS4809 } on-error={}
 :do { add address=2400:dd00::/28 list=CN comment=AS4809 } on-error={}
 :do { add address=2400:dd40::/32 list=CN comment=AS4809 } on-error={}
 :do { add address=2400:de00::/32 list=CN comment=AS4809 } on-error={}
