@@ -187,6 +187,7 @@
 :do { add forward-to=198.18.0.2 comment=GFW type=FWD regexp=".*advertisercommunity\\.com\$" } on-error={}
 :do { add forward-to=198.18.0.2 comment=GFW type=FWD regexp=".*ae\\.hao123\\.com\$" } on-error={}
 :do { add forward-to=198.18.0.2 comment=GFW type=FWD regexp=".*ae\\.org\$" } on-error={}
+:do { add forward-to=198.18.0.2 comment=GFW type=FWD regexp=".*aei\\.org\$" } on-error={}
 :do { add forward-to=198.18.0.2 comment=GFW type=FWD regexp=".*aenhancers\\.com\$" } on-error={}
 :do { add forward-to=198.18.0.2 comment=GFW type=FWD regexp=".*aex\\.com\$" } on-error={}
 :do { add forward-to=198.18.0.2 comment=GFW type=FWD regexp=".*af\\.mil\$" } on-error={}
