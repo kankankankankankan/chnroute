@@ -25,7 +25,7 @@ echo "# GFWList for RouterOS DNS with EVERYTHING included" > GFW-LIST.rsc
 echo "# Last Modified: $(date "+%Y-%m-%d %H:%M:%S")" >> GFW-LIST.rsc
 echo "#">> gfwlist.rsc
 echo "/ip dns static" >> GFW-LIST.rsc
-sed "s/^/add forward-to=198.18.0.2 comment=GFW-LIST type=FWD match-subdomain=yes address-list=gfw_list name=&/g" tmp1 >> GFW-LIST.rsc
+sed "s/^/add forward-to=198.18.0.2 comment=GFW-LIST type=FWD match-subdomain=yes name=&/g" tmp1 >> GFW-LIST.rsc
 sed -i -e '$a\/ip dns cache flush' GFW-LIST.rsc
 cp GFW-LIST.rsc ../GFW-LIST.rsc
 
