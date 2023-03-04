@@ -28,7 +28,7 @@ echo "/ip/dns/static/remove [find type=FWD]" >> GFW-LIST.rsc
 echo "/ip dns static" >> GFW-LIST.rsc
 sed "s/^/add forward-to=198.18.0.2 comment=GFW-LIST type=FWD match-subdomain=yes address-list=gfw_list name=&/g" tmp1 >> GFW-LIST.rsc
 sed -i -e '$a\/ip dns cache flush' GFW-LIST.rsc
-cp GFW-LIST.rsc ../GFW-REGEX.rsc
+cp GFW-LIST.rsc ../GFW-LIST.rsc
 
 cd ..
 rm -rf ./pbr
