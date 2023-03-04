@@ -19,3 +19,4 @@ ip段信息取自 [china-ip-list](https://github.com/mayaxcn/china-ip-list)
 用于Firewall - mangle页，通过dst-addrss= 引用
 
 22.11.27 调整为Mikrotik官网路由表
+23.03.04 增加了域名正则模式和普通模式
