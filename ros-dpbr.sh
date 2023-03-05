@@ -10,6 +10,8 @@ cd ./pbr
 # AS4809 BGP
 wget --no-check-certificate -c -O CN.txt https://raw.githubusercontent.com/mayaxcn/china-ip-list/master/chnroute.txt
 {
+echo "/log info "Loading CN ipv4 address list""
+echo "/ip firewall address-list remove [/ip firewall address-list find list=CN comment=AS4809]"
 echo "/ip firewall address-list"
 for net in $(cat CN.txt) ; do
   echo "add list=CN address=$net comment=AS4809"
