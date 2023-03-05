@@ -10,7 +10,7 @@ cd ./pbr
 # AS4809 BGP
 wget --no-check-certificate -c -O CN.txt https://raw.githubusercontent.com/mayaxcn/china-ip-list/master/chnroute.txt
 {
-echo "/log info "Loading CN ipv4 address list""
+echo "/log info \"Loading CN ipv4 address list\""
 echo "/ip firewall address-list remove [/ip firewall address-list find list=CN comment=AS4809]"
 echo "/ip firewall address-list"
 for net in $(cat CN.txt) ; do
@@ -33,8 +33,6 @@ cp tmp ../GFW-REGEX.rsc
 
 
 echo "# GFWList for RouterOS DNS with EVERYTHING included" > GFW-LIST.rsc
-echo "# Last Modified: $(date "+%Y-%m-%d %H:%M:%S")" >> GFW-LIST.rsc
-echo "#">> gfwlist.rsc
 echo "/ip dns static" >> GFW-LIST.rsc
 sed "s/^/add forward-to=198.18.0.2 comment=GFW-LIST type=FWD match-subdomain=yes name=&/g" tmp1 >> GFW-LIST.rsc
 sed -i -e '$a\/ip dns cache flush' GFW-LIST.rsc
