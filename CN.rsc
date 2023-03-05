@@ -1,5 +1,4 @@
 /log info "Loading CN ipv4 address list"
-/ip firewall address-list remove [/ip firewall address-list find list=CN comment=AS4809]
 /ip firewall address-list
 add list=CN address=1.0.1.0/24 comment=AS4809
 add list=CN address=1.0.2.0/23 comment=AS4809
