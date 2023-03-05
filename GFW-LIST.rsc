@@ -1,5 +1,4 @@
 # GFWList for RouterOS DNS with EVERYTHING included
-# Last Modified: 2023-03-05 04:08:00
 /ip dns static
 add forward-to=198.18.0.2 comment=GFW-LIST type=FWD match-subdomain=yes name=000webhost.com
 add forward-to=198.18.0.2 comment=GFW-LIST type=FWD match-subdomain=yes name=030buy.com
