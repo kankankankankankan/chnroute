@@ -18,6 +18,7 @@ done
 } > ../CN.rsc
 
 
+#GFW-REGEX
 cp ../gfwlist2dnsmasq.sh ./
 chmod +x gfwlist2dnsmasq.sh
 sh gfwlist2dnsmasq.sh -l -o tmp
@@ -31,11 +32,24 @@ sed -i -e '$a\/ip dns cache flush' tmp
 cp tmp ../GFW-REGEX.rsc
 
 
+#GFW-LIST
 echo "# GFWList for RouterOS DNS with EVERYTHING included" > GFW-LIST.rsc
 echo "/ip dns static" >> GFW-LIST.rsc
 sed "s/^/add forward-to=198.18.0.2 comment=GFW-LIST type=FWD match-subdomain=yes name=&/g" tmp1 >> GFW-LIST.rsc
 sed -i -e '$a\/ip dns cache flush' GFW-LIST.rsc
 cp GFW-LIST.rsc ../GFW-LIST.rsc
+
+
+#Exclude-CN-LIST
+cp ../exclude_cn_list.txt ./
+{
+echo "/log info \"Loading Exclude-CN ipv4 address list\""
+echo "/ip firewall address-list"
+for net in $(cat exclude_cn_list.txt) ; do
+  echo "add list=CN address=$net comment=Exclude-CN"
+done
+} > ../EXCLUDE-CN.rsc
+
 
 cd ..
 rm -rf ./pbr
