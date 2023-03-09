@@ -7,14 +7,19 @@ cd ./pbr
 #sed -i 's/list=CN/list=CN comment=AS4809/g' CN.txt
 #cp CN.txt ../CN.rsc
 
-# AS4809 BGP
+# AS4809 BGP & Exclude-CN-LIST
 wget --no-check-certificate -c -O CN.txt https://raw.githubusercontent.com/mayaxcn/china-ip-list/master/chnroute.txt
+cp ../exclude_cn_list.txt ./
 {
-echo "/log info \"Loading CN ipv4 address list\""
-echo "/ip firewall address-list"
-for net in $(cat CN.txt) ; do
-  echo "add list=CN address=$net comment=AS4809"
-done
+  echo "/log info \"Loading CN ipv4 address list\""
+  echo "/ip firewall address-list"
+  for net in $(cat CN.txt) ; do
+    echo "add list=CN address=$net comment=AS4809"
+  done
+  echo "/log info \"Loading exclude CN ipv4 address list\""
+  for net in $(cat exclude_cn_list.txt) ; do
+    echo "add list=CN address=$net comment=Exclude-CN"
+  done
 } > ../CN.rsc
 
 
@@ -38,17 +43,6 @@ echo "/ip dns static" >> GFW-LIST.rsc
 sed "s/^/add forward-to=198.18.0.2 comment=GFW-LIST type=FWD match-subdomain=yes name=&/g" tmp1 >> GFW-LIST.rsc
 sed -i -e '$a\/ip dns cache flush' GFW-LIST.rsc
 cp GFW-LIST.rsc ../GFW-LIST.rsc
-
-
-#Exclude-CN-LIST
-cp ../exclude_cn_list.txt ./
-{
-echo "/log info \"Loading Exclude-CN ipv4 address list\""
-echo "/ip firewall address-list"
-for net in $(cat exclude_cn_list.txt) ; do
-  echo "add list=CN address=$net comment=Exclude-CN"
-done
-} > ../EXCLUDE-CN.rsc
 
 
 cd ..
