@@ -8607,6 +8607,5 @@ add list=CN address=223.254.0.0/16 comment=AS4809
 add list=CN address=223.255.0.0/17 comment=AS4809
 add list=CN address=223.255.236.0/22 comment=AS4809
 add list=CN address=223.255.252.0/23 comment=AS4809
-/log info "Loading exclude CN ipv4 address list"
 add list=CN address=104.16.209.0/24 comment=Exclude-CN
 add list=CN address=104.16.210.0/24 comment=Exclude-CN
