@@ -16,7 +16,6 @@ cp ../exclude_cn_list.txt ./
   for net in $(cat CN.txt) ; do
     echo "add list=CN address=$net comment=AS4809"
   done
-  echo "/log info \"Loading exclude CN ipv4 address list\""
   for net in $(cat exclude_cn_list.txt) ; do
     echo "add list=CN address=$net comment=Exclude-CN"
   done
