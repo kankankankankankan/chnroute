@@ -41,7 +41,7 @@ cp tmp ../GFW-REGEX.rsc
 echo "# GFWList for RouterOS DNS with EVERYTHING included" > GFW-LIST.rsc
 echo ":global dnsserver" >> GFW-LIST.rsc
 echo "/ip dns static" >> GFW-LIST.rsc
-sed "s/^/add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=&/g" tmp1 >> GFW-LIST.rsc
+sed "s/^/add forward-to=\$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=&/g" tmp1 >> GFW-LIST.rsc
 sed -i -e '$a\/ip dns cache flush' GFW-LIST.rsc
 cp GFW-LIST.rsc ../GFW-LIST.rsc
 
