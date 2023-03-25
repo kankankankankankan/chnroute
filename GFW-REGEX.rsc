@@ -1,3 +1,4 @@
+:global dnsserver
 /ip dns static remove [/ip dns static find type=FWD ]
 /ip dns static
 :do { add forward-to=198.18.0.2 comment=GFW-LIST type=FWD regexp=".*000webhost\\.com\$" } on-error={}
