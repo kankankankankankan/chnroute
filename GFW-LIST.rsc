@@ -288,6 +288,7 @@ add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=ani
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=aniscartujo.com
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=annatam.com
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=anobii.com
+add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=anonfiles.com
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=anontext.com
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=anonymitynetwork.com
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=anonymizer.com
@@ -1083,6 +1084,7 @@ add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=cli
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=cloakpoint.com
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=cloud.mail.ru
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=cloudflare-ipfs.com
+add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=cloudfunctions.net
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=club1069.com
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=clubhouseapi.com
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=clyp.it
@@ -1415,7 +1417,6 @@ add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=dou
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=dowei.org
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=download.aircrack-ng.org
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=download.cnet.com
-add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=download.ithome.com.tw
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=dphk.org
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=dpp.org.tw
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=dpr.info
@@ -2873,6 +2874,7 @@ add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=ita
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=italiatibet.org
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=itasoftware.com
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=itemdb.com
+add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=itemfix.com
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=ithelp.ithome.com.tw
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=its.caltech.edu
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=itsaol.com
@@ -3120,6 +3122,7 @@ add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=ld.
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=le-vpn.com
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=leafyvpn.net
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=lecloud.net
+add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=ledger.com
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=leeao.com.cn
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=lefora.com
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=left21.hk
@@ -3830,6 +3833,7 @@ add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=okx
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=old-cat.net
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=old.honeynet.org
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=old.nabble.com
+add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=olehdtv.com
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=olevod.com
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=olumpo.com
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=olympicwatch.org
