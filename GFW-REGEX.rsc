@@ -2668,6 +2668,7 @@
 :do { add forward-to=$dnsserver comment=GFW-LIST type=FWD regexp=".*huaxiabao\\.org\$" } on-error={}
 :do { add forward-to=$dnsserver comment=GFW-LIST type=FWD regexp=".*huaxin\\.ph\$" } on-error={}
 :do { add forward-to=$dnsserver comment=GFW-LIST type=FWD regexp=".*huayuworld\\.org\$" } on-error={}
+:do { add forward-to=$dnsserver comment=GFW-LIST type=FWD regexp=".*hub\\.docker\\.com\$" } on-error={}
 :do { add forward-to=$dnsserver comment=GFW-LIST type=FWD regexp=".*hudatoriq\\.web\\.id\$" } on-error={}
 :do { add forward-to=$dnsserver comment=GFW-LIST type=FWD regexp=".*hudson\\.org\$" } on-error={}
 :do { add forward-to=$dnsserver comment=GFW-LIST type=FWD regexp=".*huffingtonpost\\.com\$" } on-error={}
@@ -3927,6 +3928,7 @@
 :do { add forward-to=$dnsserver comment=GFW-LIST type=FWD regexp=".*pacopacomama\\.com\$" } on-error={}
 :do { add forward-to=$dnsserver comment=GFW-LIST type=FWD regexp=".*padmanet\\.com\$" } on-error={}
 :do { add forward-to=$dnsserver comment=GFW-LIST type=FWD regexp=".*page\\.bid\\.yahoo\\.com\$" } on-error={}
+:do { add forward-to=$dnsserver comment=GFW-LIST type=FWD regexp=".*page\\.link\$" } on-error={}
 :do { add forward-to=$dnsserver comment=GFW-LIST type=FWD regexp=".*page2rss\\.com\$" } on-error={}
 :do { add forward-to=$dnsserver comment=GFW-LIST type=FWD regexp=".*pages\\.dev\$" } on-error={}
 :do { add forward-to=$dnsserver comment=GFW-LIST type=FWD regexp=".*pagodabox\\.com\$" } on-error={}
@@ -4070,6 +4072,7 @@
 :do { add forward-to=$dnsserver comment=GFW-LIST type=FWD regexp=".*podbean\\.com\$" } on-error={}
 :do { add forward-to=$dnsserver comment=GFW-LIST type=FWD regexp=".*podcast\\.co\$" } on-error={}
 :do { add forward-to=$dnsserver comment=GFW-LIST type=FWD regexp=".*podictionary\\.com\$" } on-error={}
+:do { add forward-to=$dnsserver comment=GFW-LIST type=FWD regexp=".*poe\\.com\$" } on-error={}
 :do { add forward-to=$dnsserver comment=GFW-LIST type=FWD regexp=".*pokerstars\\.com\$" } on-error={}
 :do { add forward-to=$dnsserver comment=GFW-LIST type=FWD regexp=".*pokerstars\\.net\$" } on-error={}
 :do { add forward-to=$dnsserver comment=GFW-LIST type=FWD regexp=".*politicalchina\\.org\$" } on-error={}

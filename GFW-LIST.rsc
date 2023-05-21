@@ -2668,6 +2668,7 @@ add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=hua
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=huaxiabao.org
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=huaxin.ph
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=huayuworld.org
+add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=hub.docker.com
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=hudatoriq.web.id
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=hudson.org
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=huffingtonpost.com
@@ -3927,6 +3928,7 @@ add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=pac
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=pacopacomama.com
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=padmanet.com
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=page.bid.yahoo.com
+add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=page.link
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=page2rss.com
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=pages.dev
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=pagodabox.com
@@ -4070,6 +4072,7 @@ add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=pob
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=podbean.com
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=podcast.co
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=podictionary.com
+add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=poe.com
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=pokerstars.com
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=pokerstars.net
 add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=politicalchina.org
