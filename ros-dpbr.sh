@@ -31,21 +31,29 @@ cp tmp tmp1
 sed -i 's/\./\\\\./g' tmp
 sed -i 's/$/\\$" } on-error={}/g' tmp
 sed -i 's/^/:do { add forward-to=$dnsserver comment=GFW-LIST type=FWD regexp=".*/g' tmp
-sed -i '1s/^/\/ip dns static\n/' tmp
-sed -i '1s/^/\/ip dns static remove [\/ip dns static find type=FWD ]\n/' tmp
-sed -i '1s/^/:global dnsserver\n/' tmp
-sed -i -e '$a\/ip dns cache flush' tmp
-cp tmp ../GFW-REGEX.rsc
+{
+  echo "/ip dns static"
+  echo "/ip dns static remove [\/ip dns static find type=FWD ]"
+  echo ":global dnsserver"
+  for net in $(cat tmp) ; do
+    echo "add forward-to=$dnsserver comment=GFW-REGEX type=FWD regexp=$net"
+  done
+  echo "/ip dns cache flush"
+} > ../GFW-REGEX.rsc
 echo "GFW-REGEX code executed successfully!"
 
 
 #GFW-LIST
 echo "Executing GFW-LIST code..."
-echo "# GFWList for RouterOS DNS with EVERYTHING included" > GFW-LIST.rsc
-echo ":global dnsserver" >> GFW-LIST.rsc
-echo "/ip dns static" >> GFW-LIST.rsc
-sed "s/^/add forward-to=\$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=&/g" tmp1 >> GFW-LIST.rsc
-sed -i -e '$a\/ip dns cache flush' GFW-LIST.rsc
+cp tmp1 tmp2
+sed -i 's/^/add forward-to=\$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=/g' tmp2
+{
+  echo "/ip dns static"
+  for net in $(cat tmp2) ; do
+    echo "add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=$net"
+  done
+  echo "/ip dns cache flush"
+} > GFW-LIST.rsc
 cp GFW-LIST.rsc ../GFW-LIST.rsc
 echo "GFW-LIST code executed successfully!"
 
