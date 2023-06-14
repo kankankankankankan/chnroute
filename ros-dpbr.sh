@@ -23,6 +23,7 @@ cp ../exclude_cn_list.txt ./
 
 
 #GFW-REGEX
+echo "Executing GFW-REGEX code..."
 cp ../gfwlist2dnsmasq.sh ./
 chmod +x gfwlist2dnsmasq.sh
 sh gfwlist2dnsmasq.sh -l -o tmp
@@ -35,15 +36,19 @@ sed -i '1s/^/\/ip dns static remove [\/ip dns static find type=FWD ]\n/' tmp
 sed -i '1s/^/:global dnsserver\n/' tmp
 sed -i -e '$a\/ip dns cache flush' tmp
 cp tmp ../GFW-REGEX.rsc
+echo "GFW-REGEX code executed successfully!"
 
 
 #GFW-LIST
+echo "Executing GFW-LIST code..."
 echo "# GFWList for RouterOS DNS with EVERYTHING included" > GFW-LIST.rsc
 echo ":global dnsserver" >> GFW-LIST.rsc
 echo "/ip dns static" >> GFW-LIST.rsc
 sed "s/^/add forward-to=\$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=&/g" tmp1 >> GFW-LIST.rsc
 sed -i -e '$a\/ip dns cache flush' GFW-LIST.rsc
 cp GFW-LIST.rsc ../GFW-LIST.rsc
+echo "GFW-LIST code executed successfully!"
+
 
 
 cd ..
