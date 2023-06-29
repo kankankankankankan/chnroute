@@ -36,8 +36,21 @@ sh gfwlist2dnsmasq.sh -l -o tmp
   for net in $(cat tmp) ; do
     echo ":do { add forward-to=\$dnsserver type=FWD address-list=GFW-LIST match-subdomain=yes name=$net } on-error={}"
   done
-} > ../GFW-LIST.rsc
+} > ../GFW-LIST-V7.rsc
 echo "GFW-LIST code executed successfully!"
+
+sed -i 's/\./\\\\./g' tmp
+{
+  echo ":global dnsserver"
+  echo "/ip dns static remove [/ip dns static find type=FWD]"
+  echo "/ip dns static"
+
+  for net in $(cat tmp) ; do
+    echo ":do { add forward-to=\$dnsserver type=FWD address-list=GFW-REGEX regexp=\".*$net\$\" } on-error={}"
+  done
+  echo "/ip dns cache flush"
+} > ../GFW-REGEX.rsc
+echo "GFW-REGEX code executed successfully!"
 
 
 cd ..
