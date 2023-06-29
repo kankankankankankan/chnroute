@@ -22,41 +22,22 @@ cp ../exclude_cn_list.txt ./
 } > ../CN.rsc
 
 
-#GFW-REGEX
-echo "Executing GFW-REGEX code..."
+
+echo "Executing GFW-LIST code..."
 cp ../gfwlist2dnsmasq.sh ./
 chmod +x gfwlist2dnsmasq.sh
 sh gfwlist2dnsmasq.sh -l -o tmp
-cp tmp tmp1
-sed -i 's/\./\\\\./g' tmp
-sed -i 's/$/\\$" } on-error={}/g' tmp
-sed -i 's/^/:do { add forward-to=$dnsserver comment=GFW-LIST type=FWD regexp=".*/g' tmp
+
 {
-  echo "/ip dns static"
-  echo "/ip dns static remove [\/ip dns static find type=FWD ]"
   echo ":global dnsserver"
-  for net in $(cat tmp) ; do
-    echo "add forward-to=$dnsserver comment=GFW-REGEX type=FWD regexp=$net"
-  done
-  echo "/ip dns cache flush"
-} > ../GFW-REGEX.rsc
-echo "GFW-REGEX code executed successfully!"
-
-
-#GFW-LIST
-echo "Executing GFW-LIST code..."
-cp tmp1 tmp2
-sed -i 's/^/add forward-to=\$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=/g' tmp2
-{
+  echo "/ip dns static remove [/ip dns static find forward-to=\$dnsserver ]"
   echo "/ip dns static"
-  for net in $(cat tmp2) ; do
-    echo "add forward-to=$dnsserver comment=GFW-LIST type=FWD match-subdomain=yes name=$net"
-  done
-  echo "/ip dns cache flush"
-} > GFW-LIST.rsc
-cp GFW-LIST.rsc ../GFW-LIST.rsc
-echo "GFW-LIST code executed successfully!"
 
+  for net in $(cat tmp) ; do
+    echo ":do { add forward-to=\$dnsserver type=FWD address-list=GFW-LIST match-subdomain=yes name=$net } on-error={}"
+  done
+} > ../GFW-LIST.rsc
+echo "GFW-LIST code executed successfully!"
 
 
 cd ..
