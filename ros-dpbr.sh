@@ -41,7 +41,8 @@ echo "GFW-LIST code executed successfully!"
 
 
 
-sed -i 's/\./\\\\\./g' tmp
+sed -i 's/\./\\\\\\./g' tmp
+
 {
   echo ":global dnsserver"
   echo "/ip dns static remove [/ip dns static find type=FWD]"
