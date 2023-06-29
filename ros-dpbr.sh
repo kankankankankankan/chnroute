@@ -39,6 +39,8 @@ sh gfwlist2dnsmasq.sh -l -o tmp
 } > ../GFW-LIST-V7.rsc
 echo "GFW-LIST code executed successfully!"
 
+
+
 sed -i 's/\./\\\\\./g' tmp
 {
   echo ":global dnsserver"
@@ -46,7 +48,7 @@ sed -i 's/\./\\\\\./g' tmp
   echo "/ip dns static"
 
   for net in $(cat tmp) ; do
-    echo ":do { add forward-to=\$dnsserver type=FWD address-list=GFW-REGEX regexp=\".*$net\$\" } on-error={}"
+    echo ":do { add forward-to=\$dnsserver type=FWD address-list=GFW-REGEX regexp=\".*$net\\$\" } on-error={}"
   done
   echo "/ip dns cache flush"
 } > ../GFW-REGEX.rsc
