@@ -27,7 +27,6 @@ echo "Executing GFW-LIST code..."
 cp ../gfwlist2dnsmasq.sh ./
 chmod +x gfwlist2dnsmasq.sh
 sh gfwlist2dnsmasq.sh -l -o tmp
-
 {
   echo ":global dnsserver"
   echo "/ip dns static remove [/ip dns static find forward-to=\$dnsserver ]"
@@ -42,7 +41,6 @@ echo "GFW-LIST code executed successfully!"
 
 
 sed -i 's/\./\\\\\\./g' tmp
-
 {
   echo ":global dnsserver"
   echo "/ip dns static remove [/ip dns static find type=FWD]"
