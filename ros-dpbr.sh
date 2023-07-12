@@ -10,6 +10,8 @@ cd ./pbr
 # AS4809 BGP & Exclude-CN-LIST
 wget --no-check-certificate -c -O CN.txt https://ispip.clang.cn/all_cn_cidr.txt
 cp ../exclude_cn_list.txt ./
+cp ../gfwlist2dnsmasq.sh ./
+chmod +x gfwlist2dnsmasq.sh
 {
   echo "/log info \"Loading CN ipv4 address list\""
   echo "/ip firewall address-list"
@@ -24,8 +26,6 @@ cp ../exclude_cn_list.txt ./
 
 
 echo "Executing GFW-LIST code..."
-cp ../gfwlist2dnsmasq.sh ./
-chmod +x gfwlist2dnsmasq.sh
 sh gfwlist2dnsmasq.sh -l -o tmp
 {
   echo ":global dnsserver"
@@ -37,19 +37,6 @@ sh gfwlist2dnsmasq.sh -l -o tmp
 } > ../GFW-LIST-V7.rsc
 echo "GFW-LIST code executed successfully!"
 
-
-
-sed -i 's/\./\\\\\\./g' tmp
-{
-  echo ":global dnsserver"
-  echo "/ip dns static remove [/ip dns static find type=FWD]"
-  echo "/ip dns static"
-  for net in $(cat tmp) ; do
-    echo ":do { add forward-to=\$dnsserver type=FWD address-list=GFW-REGEX regexp=\".*$net\\$\" } on-error={}"
-  done
-  echo "/ip dns cache flush"
-} > ../GFW-REGEX.rsc
-echo "GFW-REGEX code executed successfully!"
 
 
 cd ..
