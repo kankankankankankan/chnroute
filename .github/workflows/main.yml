@@ -2,7 +2,7 @@ name: Build PBR
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   schedule:
     - cron: '2 0/24 * * *'
   workflow_dispatch:
