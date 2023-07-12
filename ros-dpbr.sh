@@ -8,7 +8,7 @@ cd ./pbr
 #cp CN.txt ../CN.rsc
 
 # AS4809 BGP & Exclude-CN-LIST
-wget --no-check-certificate -c -O CN.txt https://raw.githubusercontent.com/mayaxcn/china-ip-list/master/chnroute.txt
+wget --no-check-certificate -c -O CN.txt https://ispip.clang.cn/all_cn_cidr.txt
 cp ../exclude_cn_list.txt ./
 {
   echo "/log info \"Loading CN ipv4 address list\""
