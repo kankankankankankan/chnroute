@@ -436,6 +436,7 @@
 :do { add forward-to=$dnsserver type=FWD address-list=GFW-REGEX regexp=".*backchina\\.com\$" } on-error={}
 :do { add forward-to=$dnsserver type=FWD address-list=GFW-REGEX regexp=".*backpackers\\.com\\.tw\$" } on-error={}
 :do { add forward-to=$dnsserver type=FWD address-list=GFW-REGEX regexp=".*backtotiananmen\\.com\$" } on-error={}
+:do { add forward-to=$dnsserver type=FWD address-list=GFW-REGEX regexp=".*bad\\.news\$" } on-error={}
 :do { add forward-to=$dnsserver type=FWD address-list=GFW-REGEX regexp=".*badiucao\\.com\$" } on-error={}
 :do { add forward-to=$dnsserver type=FWD address-list=GFW-REGEX regexp=".*badjojo\\.com\$" } on-error={}
 :do { add forward-to=$dnsserver type=FWD address-list=GFW-REGEX regexp=".*badoo\\.com\$" } on-error={}
@@ -2805,6 +2806,7 @@
 :do { add forward-to=$dnsserver type=FWD address-list=GFW-REGEX regexp=".*indiemerch\\.com\$" } on-error={}
 :do { add forward-to=$dnsserver type=FWD address-list=GFW-REGEX regexp=".*info-graf\\.fr\$" } on-error={}
 :do { add forward-to=$dnsserver type=FWD address-list=GFW-REGEX regexp=".*initiativesforchina\\.org\$" } on-error={}
+:do { add forward-to=$dnsserver type=FWD address-list=GFW-REGEX regexp=".*inkbunny\\.net\$" } on-error={}
 :do { add forward-to=$dnsserver type=FWD address-list=GFW-REGEX regexp=".*inkui\\.com\$" } on-error={}
 :do { add forward-to=$dnsserver type=FWD address-list=GFW-REGEX regexp=".*inmediahk\\.net\$" } on-error={}
 :do { add forward-to=$dnsserver type=FWD address-list=GFW-REGEX regexp=".*innermongolia\\.org\$" } on-error={}
@@ -3315,6 +3317,7 @@
 :do { add forward-to=$dnsserver type=FWD address-list=GFW-REGEX regexp=".*matrix\\.org\$" } on-error={}
 :do { add forward-to=$dnsserver type=FWD address-list=GFW-REGEX regexp=".*matsushimakaede\\.com\$" } on-error={}
 :do { add forward-to=$dnsserver type=FWD address-list=GFW-REGEX regexp=".*matters\\.news\$" } on-error={}
+:do { add forward-to=$dnsserver type=FWD address-list=GFW-REGEX regexp=".*matters\\.town\$" } on-error={}
 :do { add forward-to=$dnsserver type=FWD address-list=GFW-REGEX regexp=".*matthewdgreen\\.wordpress\\.com\$" } on-error={}
 :do { add forward-to=$dnsserver type=FWD address-list=GFW-REGEX regexp=".*mattwilcox\\.net\$" } on-error={}
 :do { add forward-to=$dnsserver type=FWD address-list=GFW-REGEX regexp=".*maturejp\\.com\$" } on-error={}
