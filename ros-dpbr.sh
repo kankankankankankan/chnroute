@@ -8,7 +8,7 @@ cd ./pbr
 #cp CN.txt ../CN.rsc
 
 # AS4809 BGP & Exclude-CN-LIST
-wget --no-check-certificate -c -O CN.txt https://ispip.clang.cn/all_cn_cidr.txt
+wget --no-check-certificate -c -O CN.txt https://raw.githubusercontent.com/kankankankankankan/ASN-China/main/IPv4.China.list
 cp ../exclude_cn_list.txt ./
 cp ../gfwlist2dnsmasq.sh ./
 chmod +x gfwlist2dnsmasq.sh
