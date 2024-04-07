@@ -8,20 +8,30 @@ cd ./pbr
 #cp CN.txt ../CN.rsc
 
 # AS4809 BGP & Exclude-CN-LIST
-wget --no-check-certificate -c -O CN.txt https://raw.githubusercontent.com/kankankankankankan/ASN-China/main/IPv4.China.list
+wget --no-check-certificate -c -O CNv4.txt https://raw.githubusercontent.com/kankankankankankan/ASN-China/main/IPv4.China.list
 cp ../exclude_cn_list.txt ./
 cp ../gfwlist2dnsmasq.sh ./
 chmod +x gfwlist2dnsmasq.sh
 {
   echo "/log info \"Loading CN ipv4 address list\""
   echo "/ip firewall address-list"
-  for net in $(cat CN.txt) ; do
+  for net in $(cat CNv4.txt) ; do
     echo "add list=CN address=$net comment=AS4809"
   done
   for net in $(cat exclude_cn_list.txt) ; do
     echo "add list=CN address=$net comment=Exclude-CN"
   done
 } > ../CN.rsc
+
+# AS4809 BGP & Exclude-CN-LIST
+wget --no-check-certificate -c -O CNv6.txt https://raw.githubusercontent.com/kankankankankankan/ASN-China/main/IPv6.China.list
+{
+  echo "/log info \"Loading CN ipv6 address list\""
+  echo "/ipv6 firewall address-list"
+  for net in $(cat CNv6.txt) ; do
+    echo "add list=CN address=$net comment=AS4809"
+  done
+} > ../CNv6.rsc
 
 
 sh gfwlist2dnsmasq.sh -l -o tmp.txt
@@ -34,6 +44,7 @@ sh gfwlist2dnsmasq.sh -l -o tmp.txt
   done
 } > ../GFW-LIST-V7.rsc
 echo "GFW-LIST code executed successfully!"
+
 
 sed -i 's/\./\\\\\\./g' tmp.txt
 {
