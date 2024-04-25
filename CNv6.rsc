@@ -88,7 +88,6 @@ add list=CN address=2001:df4:a980::/48 comment=AS4809
 add list=CN address=2001:df4:c180::/48 comment=AS4809
 add list=CN address=2001:df4:c580::/48 comment=AS4809
 add list=CN address=2001:df4:c780::/48 comment=AS4809
-add list=CN address=2001:df4:cf00::/48 comment=AS4809
 add list=CN address=2001:df4:de80::/48 comment=AS4809
 add list=CN address=2001:df5:5f80::/48 comment=AS4809
 add list=CN address=2001:df5:7800::/48 comment=AS4809
@@ -494,7 +493,7 @@ add list=CN address=2401:3380::/32 comment=AS4809
 add list=CN address=2401:33c0::/32 comment=AS4809
 add list=CN address=2401:3440::/32 comment=AS4809
 add list=CN address=2401:3480::/32 comment=AS4809
-add list=CN address=2401:34a0::/31 comment=AS4809
+add list=CN address=2401:34a0::/30 comment=AS4809
 add list=CN address=2401:34c0::/32 comment=AS4809
 add list=CN address=2401:3640::/32 comment=AS4809
 add list=CN address=2401:3780::/32 comment=AS4809
@@ -580,6 +579,7 @@ add list=CN address=2401:9260::/32 comment=AS4809
 add list=CN address=2401:92a0::/32 comment=AS4809
 add list=CN address=2401:92e0::/32 comment=AS4809
 add list=CN address=2401:9340::/32 comment=AS4809
+add list=CN address=2401:95e0::/32 comment=AS4809
 add list=CN address=2401:9600::/32 comment=AS4809
 add list=CN address=2401:96c0::/32 comment=AS4809
 add list=CN address=2401:9740::/32 comment=AS4809
@@ -2566,6 +2566,8 @@ add list=CN address=2606:54c0:2600::/41 comment=AS4809
 add list=CN address=2606:54c0:d440::/45 comment=AS4809
 add list=CN address=2607:740:18::/48 comment=AS4809
 add list=CN address=2607:6b80:69::/48 comment=AS4809
+add list=CN address=2610:a1:3074::/46 comment=AS4809
+add list=CN address=2610:a1:3078::/46 comment=AS4809
 add list=CN address=2620:171:32::/48 comment=AS4809
 add list=CN address=2620:171:5a:f0::/64 comment=AS4809
 add list=CN address=2620:171:fb::/48 comment=AS4809
@@ -3895,6 +3897,7 @@ add list=CN address=2a13:a5c3:f000::/40 comment=AS4809
 add list=CN address=2a13:a5c6:9100::/40 comment=AS4809
 add list=CN address=2a13:aac4:f00c::/48 comment=AS4809
 add list=CN address=2a13:b487:1b86::/47 comment=AS4809
+add list=CN address=2a13:b487:1b88::/47 comment=AS4809
 add list=CN address=2a13:b487:1bbe::/47 comment=AS4809
 add list=CN address=2a13:b487:42d0::/44 comment=AS4809
 add list=CN address=2a13:df80:3809:ff42::/64 comment=AS4809
