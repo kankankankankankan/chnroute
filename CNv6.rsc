@@ -28,6 +28,7 @@ add list=CN address=2001:df0:25c0::/48 comment=AS4809
 add list=CN address=2001:df0:26c0::/48 comment=AS4809
 add list=CN address=2001:df0:2e00::/48 comment=AS4809
 add list=CN address=2001:df0:2e80::/48 comment=AS4809
+add list=CN address=2001:df0:59c0::/48 comment=AS4809
 add list=CN address=2001:df0:85c0::/48 comment=AS4809
 add list=CN address=2001:df0:8d40::/48 comment=AS4809
 add list=CN address=2001:df0:9d40::/48 comment=AS4809
@@ -1431,8 +1432,7 @@ add list=CN address=2404:f4c0:f709::/48 comment=AS4809
 add list=CN address=2404:f4c0:f70a::/47 comment=AS4809
 add list=CN address=2404:f4c0:f70c::/46 comment=AS4809
 add list=CN address=2404:f4c0:f710::/44 comment=AS4809
-add list=CN address=2404:f4c0:f722::/47 comment=AS4809
-add list=CN address=2404:f4c0:f724::/46 comment=AS4809
+add list=CN address=2404:f4c0:f720::/45 comment=AS4809
 add list=CN address=2404:f4c0:f728::/46 comment=AS4809
 add list=CN address=2404:f4c0:f72c::/47 comment=AS4809
 add list=CN address=2404:f4c0:f72e::/48 comment=AS4809
@@ -3894,6 +3894,7 @@ add list=CN address=2a13:1800::/29 comment=AS4809
 add list=CN address=2a13:8b40::/29 comment=AS4809
 add list=CN address=2a13:a5c3:d600::/42 comment=AS4809
 add list=CN address=2a13:a5c3:f000::/40 comment=AS4809
+add list=CN address=2a13:a5c3:f1c0::/44 comment=AS4809
 add list=CN address=2a13:a5c6:9100::/40 comment=AS4809
 add list=CN address=2a13:aac4:f00c::/48 comment=AS4809
 add list=CN address=2a13:b487:1b86::/47 comment=AS4809
