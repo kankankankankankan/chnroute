@@ -34,7 +34,7 @@ wget --no-check-certificate -c -O CNv6.txt https://raw.githubusercontent.com/kan
 } > ../CNv6.rsc
 
 
-sh gfwlist2dnsmasq.sh -l -o tmp.txt
+wget --no-check-certificate -c -O tmp.txt https://raw.githubusercontent.com/kankankankankankan/GFWList2AGH/main/gfwlist2domain/blacklist_lite.txt
 {
   echo ":global dnsserver"
   echo "/ip dns static remove [/ip dns static find forward-to=\$dnsserver ]"
