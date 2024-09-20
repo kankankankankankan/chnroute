@@ -8,7 +8,8 @@ cd ./pbr
 #cp CN.txt ../CN.rsc
 
 # AS4809 BGP & Exclude-CN-LIST
-wget --no-check-certificate -c -O CNv4.txt https://raw.githubusercontent.com/soffchen/GeoIP2-CN/release/CN-ip-cidr.txt
+wget --no-check-certificate -c -O CNv4.txt https://raw.githubusercontent.com/misakaio/chnroutes2/master/chnroutes.txt
+cat CNv4.txt | grep -Ev "^#" > CNv4.txt
 cp ../exclude_cn_list.txt ./
 cp ../gfwlist2dnsmasq.sh ./
 chmod +x gfwlist2dnsmasq.sh
