@@ -888,7 +888,7 @@ add list=CN address=103.35.104.0/22 comment=AS4809
 add list=CN address=103.35.254.0/24 comment=AS4809
 add list=CN address=103.36.28.0/22 comment=AS4809
 add list=CN address=103.36.36.0/22 comment=AS4809
-add list=CN address=103.36.63.0/24 comment=AS4809
+add list=CN address=103.36.60.0/22 comment=AS4809
 add list=CN address=103.36.96.0/22 comment=AS4809
 add list=CN address=103.36.132.0/22 comment=AS4809
 add list=CN address=103.36.136.0/22 comment=AS4809
