@@ -19056,7 +19056,6 @@
 :do { add forward-to=$dnsserver type=FWD address-list=GFW-REGEX regexp=".*rlwlw\\.com\$" } on-error={}
 :do { add forward-to=$dnsserver type=FWD address-list=GFW-REGEX regexp=".*rm2029\\.com\$" } on-error={}
 :do { add forward-to=$dnsserver type=FWD address-list=GFW-REGEX regexp=".*rmbl\\.ws\$" } on-error={}
-:do { add forward-to=$dnsserver type=FWD address-list=GFW-REGEX regexp=".*rmimg\\.com\$" } on-error={}
 :do { add forward-to=$dnsserver type=FWD address-list=GFW-REGEX regexp=".*rmjdw\\.com\$" } on-error={}
 :do { add forward-to=$dnsserver type=FWD address-list=GFW-REGEX regexp=".*rmjdw132\\.info\$" } on-error={}
 :do { add forward-to=$dnsserver type=FWD address-list=GFW-REGEX regexp=".*ro-blox\\.com\$" } on-error={}

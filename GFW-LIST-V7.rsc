@@ -19056,7 +19056,6 @@
 :do { add forward-to=$dnsserver type=FWD address-list=GFW-LIST match-subdomain=yes name=rlwlw.com } on-error={}
 :do { add forward-to=$dnsserver type=FWD address-list=GFW-LIST match-subdomain=yes name=rm2029.com } on-error={}
 :do { add forward-to=$dnsserver type=FWD address-list=GFW-LIST match-subdomain=yes name=rmbl.ws } on-error={}
-:do { add forward-to=$dnsserver type=FWD address-list=GFW-LIST match-subdomain=yes name=rmimg.com } on-error={}
 :do { add forward-to=$dnsserver type=FWD address-list=GFW-LIST match-subdomain=yes name=rmjdw.com } on-error={}
 :do { add forward-to=$dnsserver type=FWD address-list=GFW-LIST match-subdomain=yes name=rmjdw132.info } on-error={}
 :do { add forward-to=$dnsserver type=FWD address-list=GFW-LIST match-subdomain=yes name=ro-blox.com } on-error={}
