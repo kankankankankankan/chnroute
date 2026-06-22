@@ -2862,7 +2862,7 @@ add list=CN address=192.232.97.0/24 comment=AS4809
 add list=CN address=193.9.44.0/24 comment=AS4809
 add list=CN address=193.9.46.0/24 comment=AS4809
 add list=CN address=193.112.0.0/16 comment=AS4809
-add list=CN address=194.138.202.0/24 comment=AS4809
+add list=CN address=194.138.202.0/23 comment=AS4809
 add list=CN address=194.138.245.0/24 comment=AS4809
 add list=CN address=198.208.17.0/24 comment=AS4809
 add list=CN address=198.208.19.0/24 comment=AS4809
