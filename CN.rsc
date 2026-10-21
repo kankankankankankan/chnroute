@@ -602,6 +602,7 @@ add list=CN address=60.63.0.0/16 comment=AS4809
 add list=CN address=60.160.0.0/11 comment=AS4809
 add list=CN address=60.194.0.0/15 comment=AS4809
 add list=CN address=60.200.0.0/24 comment=AS4809
+add list=CN address=60.200.35.0/24 comment=AS4809
 add list=CN address=60.204.0.0/14 comment=AS4809
 add list=CN address=60.208.0.0/12 comment=AS4809
 add list=CN address=60.232.132.0/23 comment=AS4809
